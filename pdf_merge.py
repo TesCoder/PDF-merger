@@ -4,7 +4,7 @@
 #!/usr/local/bin/python3
 from PyPDF2 import PdfReader, PdfWriter
 
-print("This program merges two PDFs together.")
+
 
 def merge_pdfs(paths, output):
     pdf_writer = PdfWriter()
@@ -21,6 +21,7 @@ def merge_pdfs(paths, output):
 
 
 if __name__ == '__main__':
+    print("This program merges two PDFs together.")
     file1 = input("Enter path of first file: ")
     file2 = input("Enter path of second file: ")
     paths = [file1, file2]
